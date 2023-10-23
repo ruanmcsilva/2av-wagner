@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(169, 169, 169, 0.577);
+}
+a.externo::after{
+    content: '/00a0/2693';
+}
+
+header{
+    background-image: linear-gradient(to bottom, black,white); /*para fazer a cor de cima para baixo*/
+    min-height: 150px;
+    text-align: center; /*Deixa o texto ao centro*/
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-size: 3em; /* Tamanho da letra*/
+    font-weight: normal; 
+    margin-bottom: 20px; /*margem da bate de baixo*/
+    text-shadow: 2px 2px 0px black;
+}
+
+header > p{
+    color: white;
+    max-width: 600px; /* tamanho maximo */
+    padding-right: 10px; /* espaçamento da esquerda*/
+    padding-left: 10px;/* espaçamento da direita */
+    margin: auto; /*Automaticamente ajusta o espaçamento na tela*/
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 0 black;
+    font-size: 20px;
+
+}
+nav{
+    background-color: rgb(255, 255, 255); /* cor de fundo */
+    padding: 10px; /*espaçamento */
+    box-shadow: 0 7px 7px black; /* cor que fica de baixo */
+}
+
+nav > a{ /* estilo da ancora do botao*/
+    color: red; /*Cor de letra*/
+    padding: 10px; /* espaçamento */
+    border-radius: 5px; /* borda aredondada*/
+    text-decoration: none; /*tira o subliando */
+    font-weight: bold; /* deixa a cor mas escura*/
+    transition-duration: .3; /* */
+}
+
+nav > a:hover{ /*Transição ao tocar na tela*/
+    background-color: cornsilk;
+    color: rebeccapurple;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    background-color: rgba(255, 255, 255, 0.633);
+    border: 1px solid rgba(0, 0, 0, 0.312);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    display: inline-block;
+    border-radius: 0 10px 0 10px;
+}
+
+.product:hover{
+    background-color: black;
+    color: white;
+    border: solid white 4px;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.modelos{
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    height: 25vw;
+    width: 100%;
+}
+.modelos-titulos{
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 1em;
+    font-size: 30px;
+    color: white;
+}
+
+.modelos__lista{
+    margin: 1em;
+    display: flex;
+   
+}
+.modelos-lista{
+    color: white;
+    text-align: center;
+    
+}
+.modelos-paragrafo{
+    color: white;
+    padding: 10px;
+}
+
+.img-logo{
+    background-color: black;
+    height: 60px;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+
+.img-logo-p{
+    background-color: black;
+    height: 60px;
+    margin-left: 190px;
+    margin-bottom: 10px;   
+}
+
+.botao{
+    height: 40px;
+    width: 80px;
+    margin-top: 10px;
+}
+
+.botao:hover{
+    background-color: rgba(121, 121, 121, 0.649);
+    color: whitesmoke;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
